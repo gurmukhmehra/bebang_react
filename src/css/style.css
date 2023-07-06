@@ -1,0 +1,146 @@
+.loader-container {
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    text-align: center;
+    background-color: #333;
+    width: 100%;
+    height: 100%;
+    z-index: 1051;
+    opacity: 0.8;
+  }
+  .loader-container .spinner {
+    animation: rotate 2s linear infinite;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 -25px;
+    width: 50px;
+    height: 50px;
+  }
+  .loader-container .spinner .path {
+    stroke: #93bfec;
+    stroke-linecap: round;
+    animation: dash 1.5s ease-in-out infinite;
+  }
+
+  @keyframes rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes dash {
+    0% {
+      stroke-dasharray: 1, 150;
+      stroke-dashoffset: 0;
+    }
+    50% {
+      stroke-dasharray: 90, 150;
+      stroke-dashoffset: -35;
+    }
+    100% {
+      stroke-dasharray: 90, 150;
+      stroke-dashoffset: -124;
+    }
+  }
+
+.top-right , .copyRight{
+    padding-left: 0px;
+    padding-top: 5px;
+    padding-bottom: 8px;
+}
+
+.top-right li {
+    display: inline;
+    margin-left: 10px;
+}
+
+.top-right li a{
+    display: inline;
+    margin-left: 10px;
+    color: #fff;
+    text-decoration:none;
+}
+
+.top-right li a:hover{
+    display: inline;
+    margin-left: 10px;
+    color: #000;
+    text-decoration:none;
+    border-radius: 10px;
+
+}
+
+.top-right-content{
+    text-align: right;
+}
+
+.main_menu li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.main_menu li a {
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+}
+
+.main_menu li a:hover {
+    color: #18431d;
+    cursor: pointer;
+}
+
+.userArea {
+    padding-left: 0px;
+    margin-top: 20px;
+}
+
+.userArea li {
+    display: inline-block;
+    padding: 5px;
+}
+
+.userArea li a {
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.userArea li a:hover {
+    color: #fff;
+    cursor: pointer;
+    background-color: #18431d;
+    border: 1px solid #18431d;
+}
+
+.divider .divider-text {
+    position: relative;
+    display: inline-block;
+    padding: 0rem 1rem;
+}
+
+.divider {
+    text-align: center;
+    white-space: nowrap;
+}
+.divider .divider-text::before {
+    right: 100%;
+  }
+.divider .divider-text::before, .divider .divider-text::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 20vw;
+    border-top: 2px solid rgba(67,89,113,.2);
+  }
+
+.bg-green{
+  background-color: #18431d;
+}
+
+.logo {
+  width: 150px;
+}
